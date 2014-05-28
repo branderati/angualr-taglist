@@ -1,5 +1,5 @@
 {
-  "name": "branderati-forked-angular-taglist",
+  "name": "branderati-forked-taglist",
   "version": "0.0.1",
   "main": "js/angular-taglist-directive.js",
   "ignore": [
