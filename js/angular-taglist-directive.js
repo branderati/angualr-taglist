@@ -82,8 +82,10 @@ angular_taglist_directive.directive('taglist', ['$timeout', function ($timeout) 
                             });
                         }
                     } else {
-                        scope.tagData.push(val);
-                        element.value = "";
+                        scope.$apply(function() {
+                            scope.tagData.push(val);
+                            element.value = "";
+                        });
                     }
                 }
             }
